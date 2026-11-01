@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Game - ПР 3_4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Персонаж 1 (Pikachu) -->
+        <div class="pokemon">
+            <div class="img-wrap">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu">
+            </div>
+            <div id="health-character">100 / 100</div>
+            <div class="progressbar">
+                <div id="progressbar-character" style="width: 100%;"></div>
+            </div>
+            <p>Pikachu</p>
+        </div>
+
+        <!-- Кнопки керування з лічильниками -->
+        <div class="controls">
+            <button id="btn-kick" class="button">Thunder Jolt (6)</button>
+            <button id="btn-second-kick" class="button">Super Attack (6)</button>
+        </div>
+
+        <!-- Персонаж 2 (Charmander) -->
+        <div class="pokemon">
+            <div class="img-wrap">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="Charmander">
+            </div>
+            <div id="health-enemy">100 / 100</div>
+            <div class="progressbar">
+                <div id="progressbar-enemy" style="width: 100%;"></div>
+            </div>
+            <p>Charmander</p>
+        </div>
+    </div>
+
+    <!-- Контейнер для логів бою -->
+    <div id="logs" class="logs-container"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #7ca8d2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.game-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pokemon {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+}
+.pokemon .img-wrap {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px auto;
+}
+.pokemon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.progressbar {
+    background: #ddd;
+    border-radius: 5px;
+    height: 15px;
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+}
+#progressbar-character, #progressbar-enemy {
+    background: green;
+    height: 100%;
+    transition: 0.3s;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.button:hover {
+    background: #e6b800;
+}
+.button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+.logs-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    width: 600px;
+    max-height: 150px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+.logs-container p {
+    margin: 5px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+}
